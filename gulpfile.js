@@ -61,9 +61,9 @@ gulp.task('buildCss', () => gulp.src([ // Переносим библиотек�
         .pipe(gulp.dest('dist/css')));
 
 gulp.task('buildFonts', () => gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('fonts')));
+        .pipe(gulp.dest('dist/fonts')));
 gulp.task('buildJs', () => gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-        .pipe(gulp.dest('js')));
+        .pipe(gulp.dest('dist/js')));
 gulp.task('buildHtml', () => gulp.src('app/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist')));
 

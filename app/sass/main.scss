@@ -1,25 +1,62 @@
 @import "libs.min.css";
 
-body{
-    background-color: #ffffff;
-}
-.cardsWrap{
-    position: relative;
-    top: 110px;
-    left: 65px;
-    padding: 0 100px;
-    width: 1065px;
+.product-container {
+    width: 1150px;
+    height: 1900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffb0;
 }
 
-.titleWrapp{
-    position: absolute;
-    left: 170px;
-    top: 80px;
-    .title{
-        font-size: 48px;
-        font-weight: bold;
-        color: #05abf6;
-        font-family: 'Liberation Sans', arial;
-        letter-spacing: 2px;
-    }
+.product {
+    margin-top: 48px;
+    width: 100%;
+    height: 877px;
+    background-color: #ffffa0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-inform {
+    width: 465px;
+    height: 100%;
+    background-color: #afffa0;
+}
+
+.galery {
+    width: 655px;
+    height: 100%;
+    background-color: #f0ffa0;
+    display: flex;
+    justify-content: space-between
+}
+
+.thumbs {
+    width: 165px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.show-image {
+    width: 100%;
+    height: 207px;
+    margin-top:17px;
+    cursor: pointer;
+}
+.images {
+    width: 460px;
+    height: 875px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images img {
+    display: none
+}
+.images .active {
+    display: block
 }

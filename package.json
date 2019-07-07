@@ -7,7 +7,7 @@
   "scripts": {
     "gulp": "gulp",
     "install": "http-server.js",
-    "start": "http-server http://127.0.0.1:8080/dist/",
+    "start": "http-server -o",
     "test": "echo \"Error: no test specified\" && exit 1",
     "minify": "gulp minify"
   },
