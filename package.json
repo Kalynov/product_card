@@ -1,0 +1,44 @@
+{
+  "name": "product_card",
+  "version": "1.0.0",
+  "private": true,
+  "description": "product_card",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "install": "http-server.js",
+    "start": "http-server http://127.0.0.1:8080/dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "gulp minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalynov/product_card.git"
+  },
+  "author": "Kalynov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cache": "^1.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-json": "^0.1.4",
+    "gulp-json-format": "^2.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-watch": "^5.0.1",
+    "imagemin-pngquant": "^7.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Kalynov/product_card/issues"
+  },
+  "homepage": "https://github.com/Kalynov/product_card#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
