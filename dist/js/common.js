@@ -1,4 +1,4 @@
-console.log("все врубилось")
+
 document.querySelectorAll(".show-image").forEach((el,i) => {
     el.onmousedown = function(event){
         event.preventDefault();
@@ -9,3 +9,6 @@ document.querySelectorAll(".show-image").forEach((el,i) => {
         document.querySelectorAll('.images > img')[mainImage].className += ' active'; 
     };
 });
+
+
+var slider = multiItemSlider('.galery')
