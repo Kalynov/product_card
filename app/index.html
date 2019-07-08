@@ -21,8 +21,8 @@
                     <div class="show-image"><img src="http://placehold.it/165x207?text=7"></div>
                     <div class="show-image"><img src="http://placehold.it/165x207?text=8"></div>
                 </div>
-                <a class="slclasser__control slclasser__control_top" href="#" role="button"></a>
-                <a class="slclasser__control slclasser__control_bottom slclasser__control_show" href="#" role="button"></a>
+                <a class="slider__control slider__control_top" href="#" role="button"></a>
+                <a class="slider__control slider__control_bottom slider__control_show" href="#" role="button"></a>
                 <div class="images">
                     <img src="http://placehold.it/460x875?text=1" class="active"/>
                     <img src="http://placehold.it/460x875?text=2" />
@@ -62,11 +62,76 @@
                         <a href="">Write a Review</a>
                     </div>
                 </div>
-                <div class="price"></div>
-                <div class="color"></div>
-                <div class="size"></div>
-                <div class="availability"></div>
-                <div class="buy"></div>
+                <div class="price">
+                    <div class="price__actual">$285.00</div>
+                    <div class="price__old">$290</div>
+                </div>
+                <div class="stock">Special offer 20% off on Category</div>
+                <div class="color">
+                    <div class="color__title">
+                        <div class="color__label">COLOR:</div>
+                        <div class="color__value">Sand</div>
+                    </div>
+                    <div class="color__radio">
+                        <div class="color__radio_input-block">
+                            <input id="sand" class="color-input sand" type="radio" name="color" />
+                            <label title="sand" for="sand"></label>
+                        </div>
+                        <div class="color__radio_input-block">
+                            <input id="black" class="color-input black" type="radio" name="color"/>
+                            <label title="black" for="black"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                    <div class="size__title">
+                        <div class="size__label">SIZE:</div>
+                        <div class="size__value">small</div>
+                    </div>
+                    <div class="size__radio">
+                        <div class="size__radio_input-block">
+                            <input id="small" class="size-input small" type="radio" name="color" />
+                            <label title="small" for="small"></label>
+                        </div>
+                        <div class="size__radio_input-block">
+                            <input id="medium" class="size-input medium" type="radio" name="color"/>
+                            <label title="medium" for="medium"></label>
+                        </div>
+                        <div class="size__radio_input-block">
+                            <input id="large" class="size-input large" type="radio" name="color" />
+                            <label title="large" for="large"></label>
+                        </div>
+                        <div class="size__radio_input-block">
+                            <input id="extra-large" class="size-input extra-large" type="radio" name="color"/>
+                            <label title="extra-large" for="extra-large"></label>
+                        </div>
+                        <a class="link" href="">Size Chart</a>
+                    </div>
+                </div>
+                <div class="availability">
+                    <div class="availability__title">
+                        <div class="availability__label">AVAILABILITY:</div>
+                        <div class="availability__value">in stock</div>
+                    </div>
+                </div>
+                <div class="buy">
+                    <div class="top-line"></div>
+                    <div class="quantity">
+                        <div class="quantity__title">QUANTITY</div>
+                        <div class="quantity__container">
+                            <div class="quantity__counter">
+                                <div class="quantity__number">1</div>
+                                <div class="arrows">
+                                    <div class="arrow arrow-up"></div>
+                                    <div class="arrow arrow-down"></div>
+                                </div>
+                            </div>
+                            <div class="quantity__summ"></div>
+                            <input class="quantity__button" value="ADD TO CART" type="button" onclick="addToCart()">
+                            <div class="hint">Product added to cart</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="description">
