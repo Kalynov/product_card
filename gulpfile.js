@@ -54,8 +54,8 @@ gulp.task('img', () =>
 
 
 gulp.task('buildCss', () => gulp.src([ // Переносим библиотеки в продакшен
-        'app/css/main.css',
-        'app/css/libs.min.css'
+        'app/css/*.css',
+        /* 'app/css/libs.min.css' */
     ])
         .pipe(cssnano())
         .pipe(gulp.dest('dist/css')));
@@ -90,7 +90,8 @@ gulp.task('code', () => gulp.src('app/*.html')
 
 gulp.task('css-libs', gulp.series('sass', () => 
      gulp.src([
-        'app/css/libs.css',
+        'app/css/slider.css',
+        'app/css/tabs.css',
     ]) // Выбираем файл для минификации
         .pipe(concat('libs.min.css'))
         .pipe(cssnano()) // Сжимаем
@@ -105,7 +106,7 @@ gulp.task('watch', () => {
 });
 gulp.task('default', gulp.parallel('css-libs', 'sass', 'createjson', 'scripts', 'browser-sync', 'watch'));
 
-gulp.task('build', gulp.parallel('css-libs', 'prebuild', 'clean', 'img', 'sass', 'createjson', 'scripts'));
+gulp.task('build', gulp.parallel(/* 'css-libs',  */'prebuild', 'clean', 'img', 'sass', 'createjson', 'scripts'));
 
 gulp.task('my', gulpDefault());
 
