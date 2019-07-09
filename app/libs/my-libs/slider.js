@@ -4,10 +4,10 @@ var multiItemSlider = (function () {
     var
         _mainElement = document.querySelector(selector), // основный элемент блока
         _sliderWrapper = _mainElement.querySelector('.thumbs'), // обертка для .slider-item
-        _sliderItems = _mainElement.querySelectorAll('.show-image'), // элементы (.slider-item)
-        _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
-        _sliderControlTop = _mainElement.querySelector('.slider__control_top'), // кнопка "TOP"
-        _sliderControlBottom = _mainElement.querySelector('.slider__control_bottom'), // кнопка "BOTTOM"
+        _sliderItems = _mainElement.querySelectorAll('.product .show-image'), // элементы (.slider-item)
+        _sliderControls = _mainElement.querySelectorAll('.product .slider__control'), // элементы управления
+        _sliderControlTop = _mainElement.querySelector('.product .slider__control_top'), // кнопка "TOP"
+        _sliderControlBottom = _mainElement.querySelector('.product .slider__control_bottom'), // кнопка "BOTTOM"
         _wrapperHeight = parseFloat(getComputedStyle(_sliderWrapper).height), // ширина обёртки
         _itemHeight = parseFloat(getComputedStyle(_sliderItems[0]).height), // ширина одного элемента    
         _positionTopItem = 0, // позиция левого активного элемента

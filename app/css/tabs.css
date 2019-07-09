@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.tabs {
+  position: relative;
+  /* Относительное позиционирование */ }
+  .tabs .tab, .tabs .tab-title {
+    display: inline-block;
+    /* Выстраиваем по горизонтали */ }
+  .tabs .tab input[type="radio"] {
+    display: none; }
+  .tabs .tab-title {
+    width: 225px;
+    height: 56px;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 2px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px 10px;
+    /* Поля вокруг текста */
+    border: 1px solid #666;
+    /* Параметры рамки */ }
+  .tabs .tab-content {
+    position: absolute;
+    /* Абсолютное позиционирование */
+    padding: 19px 10px 10px 10px;
+    /* Поля вокруг текста */
+    line-height: 25px;
+    left: 0;
+    /* Размещаем у левого края */
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+    /* Ширина содержимого */
+    display: none;
+    /* Прячем вкладку */
+    font-size: 12px; }
+    .tabs .tab-content ul {
+      list-style-type: none;
+      margin-top: 16px;
+      padding-left: 18px; }
+    .tabs .tab-content li {
+      position: relative; }
+      .tabs .tab-content li:before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #b68f5b;
+        left: -15px;
+        top: 9px; }
+  .tabs .tab :checked + .tab-title, .tabs .tab :hover + .tab-title {
+    position: relative;
+    /* Относительное позиционирование */
+    background: #fff;
+    /* Цвет фона */
+    top: 1px;
+    /* Сдвигаем вниз */
+    z-index: 1;
+    /* Отображаем поверх содержимого */
+    color: black;
+    border-color: #b68f5b; }
+  .tabs .tab :checked ~ .tab-content {
+    display: block;
+    /* Показываем активную вкладку */ }
+  .tabs .line {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    border-top: solid 2px #b68f5b;
+    top: 55px; }

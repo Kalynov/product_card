@@ -14,6 +14,9 @@ document.querySelectorAll(".show-image").forEach((el,i) => {
 var slider = multiItemSlider('.galery')
 
 
+//horisontal slider for recomended
+var sliderVertical = multiItemSliderHorisontal('.slider')
+
 ///change color label
 document.querySelectorAll(".color__radio_input-block").forEach(el=>{
     el.onmousedown = function(event){
@@ -64,4 +67,12 @@ function addToCart(){
         document.querySelector(".hint").classList.remove('show');
         clearTimeout(timer);
     },4000)
+}
+
+function addToWishlist(){
+    alert("ADD TO WISHLIST");
+}
+
+function addToGiftregistry(){
+    alert("ADD TO GIFTREGISTRY");
 }

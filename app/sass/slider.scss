@@ -1,0 +1,112 @@
+.recomended {
+    .slider {
+        position: relative;
+        top: 26px;
+        overflow: hidden;
+    }
+
+    .slider__wrapper {
+        display: flex;
+        transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+        flex: 0 0 25.6%;
+        max-width: 25.6%;
+    }
+
+    .slider__control {
+        position: absolute;
+        top: 154px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        color: #fff;
+        text-align: center;
+        opacity: 0.5;
+        height: 36px;
+        background-color: #f1f1f1;
+        border: solid 1px #b1b1b1;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+        color: #fff;
+        text-decoration: none;
+        outline: 0;
+        opacity: .9;
+    }
+
+    .slider__control_left {
+        left: 0;
+    }
+
+    .slider__control_right {
+        right: 3px;
+    }
+
+    .slider__control::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider__control::before,.slider__control::after {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        border: 10px solid transparent;
+    }
+    .slider__control_left::before {
+        left: 1px;
+        border-right: 10px solid #a4a4a4;
+        
+    }
+    .slider__control_left::after {
+        border-right: 10px solid#f1f1f1;
+        left: 5px;
+    }
+
+    .slider__control_right::before {
+        border-left: 10px solid #a4a4a4;
+        right: 1px;
+    }
+    .slider__control_right::after {
+        border-left: 10px solid#f1f1f1;
+        right: 5px; 
+    }
+
+   /*  .slider__control_left::before {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    } */
+
+    .slider__item>div {
+        text-align: center;
+    }
+    
+    .content {
+        margin-right: 10px;
+        height: 435px;
+        width: 264px;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            text-transform: uppercase;
+            margin-top: 13px;
+            font-size: 15px;
+
+        }
+        .price {
+            font-size: 16px;
+            margin-top: 4px;
+        }
+    }
+
+}
